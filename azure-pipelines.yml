@@ -60,7 +60,7 @@ stages:
     - task: AzureRmWebAppDeployment@4
       inputs:
         ConnectionType: 'AzureRM'
-        azureSubscription: 'Pay-As-You-Go(1)(049cc0b9-2696-4e70-871b-4366be487c19)'
+        azureSubscription: 'Pay-As-You-Go(848d52ab-6013-4d82-949c-e73066c17cb6)'
         appType: 'webApp'
-        WebAppName: 'mywebapp0097'
+        WebAppName: 'spacegamewebapp'
         packageForLinux: '$(System.ArtifactsDirectory)/drop/*.zip'
