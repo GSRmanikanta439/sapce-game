@@ -1,10 +1,4 @@
 # ASP.NET Core (.NET Framework)- task: AzureRmWebAppDeployment@5
-  inputs:
-    ConnectionType: 'AzureRM'
-    azureSubscription: 'azurermserviceconnection'
-    appType: 'webApp'
-    WebAppName: 
-    packageForLinux: '$(System.DefaultWorkingDirectory)/**/*.zip'
 # Build and test ASP.NET Core projects targeting the full .NET Framework.
 # Add steps that publish symbols, save build artifacts, and more:
 # https://docs.microsoft.com/azure/devops/pipelines/languages/dotnet-core
@@ -68,5 +62,5 @@ stages:
         ConnectionType: 'AzureRM'
         azureSubscription: 'azurermserviceconnection'
         appType: 'webApp'
-        WebAppName: 'spacegamewebapp'
+        WebAppName: 'webappspacegame'
         packageForLinux: '$(System.ArtifactsDirectory)/drop/*.zip'
